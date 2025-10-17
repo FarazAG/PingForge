@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sidebar";
 
 import AddSiteButton from "./AddSiteButton";
+import { ModeToggle } from "./themeToggle";
 
 import { useSites } from "./site-context";
 import { FlameKindling, X } from "lucide-react";
@@ -18,8 +19,9 @@ export default function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader>
-        <div className="flex justify-center items-center text-2xl font-semibold font-mono">
+        <div className="flex justify-between px-2 items-center text-2xl font-semibold font-mono">
           PingForge
+          <ModeToggle />
         </div>
       </SidebarHeader>
       <SidebarContent>

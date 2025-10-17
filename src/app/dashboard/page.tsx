@@ -7,8 +7,8 @@ export default function DashboardPage() {
 
   return (
     <>
-      <div className="min-h-screen w-screen flex items-center gap-5 py-10 flex-col">
-        <div className="font-bold text-3xl flex justify-center pb-5 w-full">
+      <div className="min-h-screen w-screen flex items-center gap-5 py-5 flex-col">
+        <div className="font-semibold text-3xl flex justify-center pb-5 w-full font-mono">
           Dashboard
         </div>
         <div className="flex w-full items-center gap-5 flex-wrap px-4 justify-center">
