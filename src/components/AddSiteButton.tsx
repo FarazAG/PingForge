@@ -38,6 +38,9 @@ export default function AddSiteButton() {
             placeholder="example.com"
             className="w-full rounded-md border p-2"
             onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") addSite(input);
+            }}
           />
           <Button
             variant="secondary"
